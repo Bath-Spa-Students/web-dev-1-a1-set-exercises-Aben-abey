@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial Rounded MT Bold', Arial, sans-serif; /* Changed font to a rounded font */
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 0, 0); /* Changed background color */
+}
+
+nav {
+    background-color: #3b5998; /* Changed navigation background color */
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* Center align horizontally */
+    margin-bottom: 20px; /* Added margin at the bottom */
+}
+
+nav a {
+    color: #f80000;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #4a6ea8; /* Changed navigation hover background color */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(188, 63, 205); /* Added background color */
+    border-radius: 20px; /* Increased border radius for container */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+h1 {
+    font-size: 48px; /* Increased font size for heading */
+    margin-bottom: 30px; /* Increased margin bottom for heading */
+    text-align: center;
+    color: #09c81c; /* Changed heading color */
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-set {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.image-set img {
+    max-width: calc(33.33% - 20px);
+    height: auto;
+    border-radius: 20px; /* Increased border radius for images */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Added more prominent box shadow */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer; /* Added cursor pointer */
+}
+
+.image-set img.duplicate1 {
+    filter: grayscale(100%);
+}
+
+.image-set img.duplicate2 {
+    filter: sepia(100%);
+}
+
+.image-set img.duplicate3 {
+    filter: saturate(500%);
+}
